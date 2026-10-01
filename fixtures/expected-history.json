@@ -1,0 +1,122 @@
+{
+  "purpose": "Fixture for testing a file-oriented Git history viewer over a modular LaTeX article.",
+  "article": "Rzut ukośny -- model, równania i interpretacja",
+  "source_root": "article",
+  "files": [
+    {
+      "path": "article/sections/01-wprowadzenie.tex",
+      "history_id": "intro",
+      "expected_versions": 4,
+      "changes": [
+        {
+          "commit": "9a291ed2ec16988a8ccabed556d348d5ac3c941b",
+          "summary": "Initial short introduction."
+        },
+        {
+          "commit": "35cddf38ec98179bafbdfd4807aaa633dfc2427c",
+          "summary": "Explained superposition of horizontal and vertical motion."
+        },
+        {
+          "commit": "3ca816b8e248dbe5a01e457a572c830d8bb46a35",
+          "summary": "Added learning goals and explicit scope of the ideal model."
+        },
+        {
+          "commit": "14941730505b4389505dd3afe548bcc56e35edba",
+          "summary": "Added a framing physical question before the derivation."
+        }
+      ]
+    },
+    {
+      "path": "article/sections/02-model.tex",
+      "history_id": "model",
+      "expected_versions": 5,
+      "changes": [
+        {
+          "commit": "1a3145402a7adc541bbccaf710a5537b0c09220f",
+          "summary": "Initial coordinate system and velocity decomposition."
+        },
+        {
+          "commit": "16005c6469c0f6e900cd345752f5749b995cef25",
+          "summary": "Added assumptions and initial position."
+        },
+        {
+          "commit": "525999fe2a4d1b2d4caef2734feca544fe36424c",
+          "summary": "Explained geometric meaning of the velocity components."
+        },
+        {
+          "commit": "68ef64e11564a45c6ae1a1f056ac169afaff9b9c",
+          "summary": "Clarified origin and gravity sign convention."
+        },
+        {
+          "commit": "9ffba31b850409055907a3b47c57810e85456020",
+          "summary": "Documented boundary-angle cases and a limitation of time elimination."
+        }
+      ]
+    },
+    {
+      "path": "article/sections/03-rownania-ruchu.tex",
+      "history_id": "equations",
+      "expected_versions": 4,
+      "changes": [
+        {
+          "commit": "9a1e102d5301225c9ec872bc681c3f6b5b57f4b1",
+          "summary": "Initial scalar equations for velocity and position."
+        },
+        {
+          "commit": "06c883f804f04fb37cbee69689fe301a61bbb05b",
+          "summary": "Added vector form and explicit initial conditions."
+        },
+        {
+          "commit": "020e23ec5af21779ee5081f9a1dd11c9b9779b44",
+          "summary": "Reworked derivation as successive integration of acceleration."
+        },
+        {
+          "commit": "cc8a16570ed161746efe8826b308e152dca6c085",
+          "summary": "Added speed magnitude and velocity at the apex."
+        }
+      ]
+    },
+    {
+      "path": "article/sections/04-tor-ruchu.tex",
+      "history_id": "trajectory",
+      "expected_versions": 4,
+      "changes": [
+        {
+          "commit": "b98ec0fd642ec9957925ec14186fec1d3c3f0787",
+          "summary": "Initial elimination of time and parabolic trajectory."
+        },
+        {
+          "commit": "bdbb00673aaeae5e7021c487aa02bae088df6820",
+          "summary": "Derived time and height of the apex."
+        },
+        {
+          "commit": "98963389db32d0156fffa6e01666d2c84510c791",
+          "summary": "Separated the mathematical parabola from the physical flight interval."
+        },
+        {
+          "commit": "a164802d4205deda8796f9f46b89d80f1b02ee2c",
+          "summary": "Connected the apex with range and parabola symmetry."
+        }
+      ]
+    },
+    {
+      "path": "article/sections/05-zasieg-i-przyklad.tex",
+      "history_id": "range-example",
+      "expected_versions": 3,
+      "changes": [
+        {
+          "commit": "81b2788dcbfea1a2a196bbef3b12adcb5c2fbdc1",
+          "summary": "Initial time-of-flight, range formula and one numerical result."
+        },
+        {
+          "commit": "b86b85469c34a8af7af38add82007c3aaa217416",
+          "summary": "Derived optimal angle and complementary-angle symmetry."
+        },
+        {
+          "commit": "9503f9f0329b66bf6b66b24830df59d29cb00439",
+          "summary": "Expanded numerical example with time of flight and maximum height."
+        }
+      ]
+    }
+  ]
+}
