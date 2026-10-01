@@ -13,18 +13,22 @@ Przyspieszenie jest stałe:
 \vect{a}(t)=(0,-g).
 \]
 
-Ponieważ w kierunku poziomym nie działa przyspieszenie, składowa pozioma
-prędkości jest stała:
+Zależność prędkości od czasu otrzymujemy z całkowania przyspieszenia:
 \[
-v_x(t)=v_0\cos\alpha.
+\vect{v}(t)=\vect{v}(0)+\vect{a}t.
 \]
-
-W kierunku pionowym prędkość zmienia się liniowo:
+Stąd
 \[
+v_x(t)=v_0\cos\alpha,
+\qquad
 v_y(t)=v_0\sin\alpha-gt.
 \]
 
-Po scałkowaniu otrzymujemy położenie
+Kolejne całkowanie daje położenie:
+\[
+\vect{r}(t)=\vect{r}(0)+\vect{v}(0)t+\frac{1}{2}\vect{a}t^2.
+\]
+Po rozpisaniu na składowe:
 \[
 x(t)=v_0\cos\alpha\,t,
 \]
@@ -40,3 +44,7 @@ v_0\cos\alpha\,t,\;
 v_0\sin\alpha\,t-\frac{1}{2}gt^2
 \right).
 \]
+
+Warto zauważyć asymetrię równań: \(x(t)\) jest funkcją liniową czasu,
+natomiast \(y(t)\) jest funkcją kwadratową. To właśnie kwadratowa zależność
+pionowego położenia prowadzi do parabolicznego kształtu toru.
