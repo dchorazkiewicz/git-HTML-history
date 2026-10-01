@@ -541,11 +541,29 @@
     var el = document.querySelector(".rendered-doc");
     if (!el || typeof window.renderMathInElement !== "function") return;
     try {
+      var macros = {
+        "\\vect": "\\boldsymbol{#1}"
+      };
+
+      var preambleFile = state.data.files.find(function (file) {
+        return file.path === "article/preamble.tex";
+      });
+
+      if (preambleFile && preambleFile.versions && preambleFile.versions.length) {
+        var preamble = preambleFile.versions[preambleFile.versions.length - 1].content;
+        var macroPattern = /\\newcommand\{(\\[A-Za-z]+)\}\[1\]\{([^\n]+)\}/g;
+        var match;
+        while ((match = macroPattern.exec(preamble)) !== null) {
+          macros[match[1]] = match[2];
+        }
+      }
+
       window.renderMathInElement(el, {
         delimiters: [
           { left: "\\[", right: "\\]", display: true },
           { left: "\\(", right: "\\)", display: false }
         ],
+        macros: macros,
         throwOnError: false
       });
     } catch (e) {
